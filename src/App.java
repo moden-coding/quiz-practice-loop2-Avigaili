@@ -10,5 +10,29 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
+    
+        
+        int high = 0;
+        int low = 100;
+
+        
+        while(true) {
+            System.out.println("Give a number:");
+            int imput = Integer.valueOf(scanner.nextLine());
+            if (imput == -1) {
+             break;
+        }
+         
+          if (imput > high ) {
+            high = imput;
+            
+        } if (imput <low ){
+            low = imput;
+            
+        }
+        }
+        System.out.println("The high score was " + high + " and the lowest score was " + low);
     }
 }
+    
+
